@@ -104,8 +104,8 @@ Your xstartup should look like the following:
     #!/bin/sh
         
     xrdb $HOME/.Xresources
-xsetroot -solid grey
-x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+    xsetroot -solid grey
+    x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
     x-window-manager &
     # Fix to make GNOME work
     export XKL_XMODMAP_DISABLE=1
@@ -117,7 +117,7 @@ Next thing to check is our launch.sh file.
 
     more /home/YOUR_USER_NAME/noVNC/utils/launch.sh
 
-Your launch.sh should look like the following:
+The begining of your launch.sh should look like the following:
 
     #!/usr/bin/env bash
      
